@@ -9,7 +9,7 @@ import java.util.HashMap;
 import org.json.*;
 public class Currency_converter {
 	public static void converter(String from,String to,double amount) throws IOException, JSONException {
-			String url_str = "https://v6.exchangerate-api.com/v6/4c7415e377d8556029937de8/latest/"+from;
+			String url_str = "https://v6.exchangerate-api.com/v6/<YOUR API PIN HERE>/latest/"+from;
 			@SuppressWarnings("deprecation")
 			URL url = new URL(url_str);	
 			HttpURLConnection request = (HttpURLConnection) url.openConnection();
